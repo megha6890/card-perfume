@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+main{
+    display: flex;
+    width: 600px;
+    height: 450px;
+}
+
+.imgbox{
+   width: 50%;
+   height: 100%;
+}
+
+.imgbox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.imgbox img.mobile{
+    display: none;
+}
+
+.content{
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 32px;
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+}
+
+.perfume{
+font-family:'Times New Roman', Times, serif;
+font-size: 12px;
+color: hsl(228,12%,14%);
+letter-spacing: 3px;
+}
+
+.heading{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+   
+}
+
+.description{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 29px;
+}
+
+.price{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.discount{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 32px;
+}
+
+.nodisc{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.click{
+    background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+@media (max-width: 530px){
+    .imgbox img.desktop{
+        display: none;
+    }
+    .imgbox img.mobile{
+        display: block;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+    }
+    .imgbox{
+        width: 100%;
+        height: 240px;
+    }
+
+    main{
+        display: block;
+        height: 620px;
+        width: 343px;
+        max-width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        width: 100%;
+        padding: 23px;
+        border-radius: 0 0 10px 10px;
+    }
+}
